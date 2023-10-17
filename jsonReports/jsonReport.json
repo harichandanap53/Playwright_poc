@@ -1,0 +1,134 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Dell\\Desktop\\learn-playwright\\playwright.config.ts",
+    "rootDir": "C:/Users/Dell/Desktop/learn-playwright",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/Dell/Desktop/learn-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/Dell/Desktop/learn-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/up_load.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.38.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\up_load.test.ts",
+      "file": "tests/up_load.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "UI Testing ",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 4416,
+                  "error": {
+                    "message": "locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//input[@id=\\'file-upload\\']')\n============================================================",
+                    "stack": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//input[@id=\\'file-upload\\']')\n============================================================\n    at uploadApi.Click_fileupload (C:\\Users\\Dell\\Desktop\\learn-playwright\\page\\upload.test.ts:13:59)\n    at C:\\Users\\Dell\\Desktop\\learn-playwright\\tests\\up_load.test.ts:12:11",
+                    "location": {
+                      "file": "C:\\Users\\Dell\\Desktop\\learn-playwright\\page\\upload.test.ts",
+                      "column": 59,
+                      "line": 13
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39mpage\\upload.test.ts:13\n\n\u001b[0m \u001b[90m 11 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[33mClick_fileupload\u001b[39m() {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@id='file-upload']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m     \u001b[90m//await this.page.setInputFiles(\"\", \"\");\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m     \u001b[90m//C:\\Users\\Dell\\Desktop\\ss\\checkbox.png\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Dell\\Desktop\\learn-playwright\\page\\upload.test.ts",
+                        "column": 59,
+                        "line": 13
+                      },
+                      "message": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//input[@id=\\'file-upload\\']')\n============================================================\n\n\u001b[90m   at \u001b[39mpage\\upload.test.ts:13\n\n\u001b[0m \u001b[90m 11 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[33mClick_fileupload\u001b[39m() {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@id='file-upload']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m     \u001b[90m//await this.page.setInputFiles(\"\", \"\");\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m     \u001b[90m//C:\\Users\\Dell\\Desktop\\ss\\checkbox.png\u001b[39m\u001b[0m\n\n\u001b[2m    at uploadApi.Click_fileupload (C:\\Users\\Dell\\Desktop\\learn-playwright\\page\\upload.test.ts:13:59)\u001b[22m\n\u001b[2m    at C:\\Users\\Dell\\Desktop\\learn-playwright\\tests\\up_load.test.ts:12:11\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-10-17T03:27:33.952Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Dell\\Desktop\\learn-playwright\\test-results\\tests-up_load-UI-Testing-\\test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Dell\\Desktop\\learn-playwright\\page\\upload.test.ts",
+                    "column": 59,
+                    "line": 13
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0bad9f6e0fc651239701-81273aa0738279f19f74",
+          "file": "tests/up_load.test.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
